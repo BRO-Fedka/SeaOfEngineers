@@ -3,7 +3,7 @@ function startgame() {
 	// console.log('test');
 	if (!(nicknameinput.value == '')) {
 		try {
-			let socket = new WebSocket("ws://192.168.51.223:8000");
+			let socket = new WebSocket("ws://91.238.88.249:8000");
 			socket.addEventListener('open', function (event) {
 				socket.send('n'+nicknameinput.value);
 				// console.log('ok')
