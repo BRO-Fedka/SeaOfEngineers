@@ -1,0 +1,226 @@
+body{
+	margin: 0;
+	background: #004f88;
+}
+#MainScreen{
+	z-index: 5;
+	/*background-image: ;*/
+	background: url("BG.svg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	position: fixed;
+	height: 100%;
+}
+#MainCanvas{
+	display: block;
+	background: #004f88;
+	text-align: center;
+}
+#MainForm{
+	align-content: center;
+	border-radius: 10px;
+	position: fixed;
+	transform: translateX(-50%) translateY(-50%);
+	background-color: rgba(0,0,0,0.2);
+	top: 50%;
+	left:50%;
+	width: 300px;
+	height: 300px;
+}
+h2{
+	font-family: 'Supermercado One', cursive;
+	color:#fff;
+
+	text-align: center;
+}
+h1{
+	font-family: 'Supermercado One', cursive;
+	color:#fff;
+
+	text-align: center;
+}
+input:focus {outline:none!important;}
+#NameField{
+	color: #ffffff;
+	position: fixed;
+	transform: translateX(-50%) translateY(-50%);
+	left: 150px;
+	background-color: rgba(0,0,0,0.2);
+	font-family: 'Supermercado One', cursive;
+	font-size: 24px;
+	border-radius: 4px;
+	border:0;outline:0;
+	border: none;
+	/* text-align: center; */
+	/*border-color: rgba(0,0,0,0.5);*/
+}
+#PlayBTN{
+	position: fixed;
+	transform: translateX(-50%) translateY(-50%);
+	left: 150px;
+	top: 225px;
+	width: 275px;
+	height: 125px;
+	text-align: center;
+	color: #ffffff;
+	background-color: rgba(0,0,0,0.2);
+	font-family: 'Supermercado One', cursive;
+	font-size: 48px;
+	border-radius: 4px;
+	border:0;outline:0;
+	border: none;
+}
+#PlayBTN:hover{
+	background-color: rgba(0,0,0,0.5);
+}
+#GasNum{
+	position: absolute;
+	font-size: 20px;
+	padding: 10px;
+	width: 80px;
+	top: 20px;
+	left: 20px;
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	color: #6ae843;
+	background-color: #181818;
+	border: 10px double  #adada3;
+	border-radius: 10px;
+}
+#DirNum{
+	position: absolute;
+	font-size: 20px;
+	padding: 10px;
+	width: 80px;
+	top: 100px;
+	left: 20px;
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	color: #6ae843;
+	background-color: #181818;
+	border: 10px double  #adada3;
+	border-radius: 10px;
+}
+#ErrorForm{
+	text-align: center;
+	border-radius: 10px;
+	position: fixed;
+	transform: translateX(-50%) translateY(-50%);
+	background-color: rgba(0,0,0,0.2);
+	top: 50%;
+	left:50%;
+	width: 300px;
+	height: 300px;
+	color: #b70002;
+	font-family: 'Supermercado One', cursive;
+	font-size: 48px;
+	display: none;
+}
+#MapForm{
+	overflow: hidden;
+	padding: 10px;
+	border-radius: 10px;
+	position: fixed;
+	transform: translateX(-50%) translateY(-50%);
+	top: 50%;
+	left:50%;
+	background-color: rgba(0,0,0,0.2);
+	display: none;
+}
+#Map{
+	width: 100%;
+	height: 100%;
+}
+.unselectable {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+#ChatView{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding: 10px;
+	height:240px;
+	border-radius: 10px;
+	/* position: fixed; */
+	/* bottom: 0;
+	left:0; */
+	background-color: rgba(0,0,0,0.2);
+	/*display: none;*/
+}
+#ChatForm{
+	width: 300px;
+	height:300px  ;
+	overflow: hidden;
+	padding: 10px;
+
+	border-radius: 10px;
+	position: fixed;
+	bottom: 0;
+	left:0;
+	background-color: rgba(0,0,0,0.2);
+	/*display: none;*/
+}
+#MessageField{
+	color: #ffffff;
+	background-color: rgba(0,0,0,0.2);
+	font-family: 'Supermercado One', cursive;
+	font-size: 24px;
+	border-radius: 4px;
+	border:0;outline:0;
+	border: none;
+	width: 280px;
+	margin-top: 10px;
+}
+.MSGk > b{
+    font-family: 'Supermercado One',bold;
+    color: #fff;
+}
+.MSGk{
+font-size:20px;
+font-family: 'ZCOOL QingKe HuangYou',cursive;
+color: #f00;
+}
+.MSG{
+font-size:20px;
+font-family: 'ZCOOL QingKe HuangYou',cursive;
+color: #fff;
+}
+#HPBar{
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	color: #0f0;
+	background-color: #f00;
+	border-radius: 10px;
+	margin:5px
+
+}
+#HPNum{
+	position: absolute;
+	font-size: 20px;
+	padding: 5px;
+	width: 120px;
+	top:10px;
+	text-align:center;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	color: #6ae843;
+	background-color: #181818;
+	border: 10px double  #adada3;
+	border-radius: 10px;
+}
+#HPDiv {
+	position: absolute;
+	font-size: 20px;
+	padding:5px
+	bottom: 20px;
+	margin-bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #181818;
+	border: 10px double  #adada3;
+	border-radius: 10px;
+	color: #6ae843;
+}
